@@ -1,0 +1,31 @@
+{
+    "name": "leruge/tp6-auth",
+    "description": "thinkphp6.0\u0000\u0000\u0000\u0000auth",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leruge",
+            "email": "leruge@163.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "leruge\\": "src"
+        }
+    },
+    "require": {
+        "topthink/framework": "^6.0.0",
+        "topthink/think-migration": "^3.0"
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "leruge\\AuthService"
+            ],
+            "config": {
+                "auth": "src/config/config.php"
+            }
+        }
+    }
+}
