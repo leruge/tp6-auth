@@ -15,7 +15,9 @@
         }
     },
     "require": {
-        "topthink/framework": "^6.0.0",
+        "topthink/framework": "^6.0.0"
+    },
+    "require-dev": {
         "topthink/think-migration": "^3.0"
     },
     "extra": {

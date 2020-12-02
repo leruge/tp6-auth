@@ -10,9 +10,6 @@ class Auth
 {
     protected $config = [
         'auth_on'           =>  true,                // 认证开关
-        'auth_group'        =>  'auth_group',        // 用户组数据表名
-        'auth_group_access' =>  'auth_group_access', // 用户-用户组关系表
-        'auth_rule'         =>  'auth_rule',         // 权限规则表
         'super_id_array'         => [],                   // 拥有所有权限的用户，如[1, 2, 3]，那么这三个用户则拥有所有权限
     ];
 
@@ -84,7 +81,7 @@ class Auth
      *
      * @param integer $uid 用户ID
      *
-     * @return array 权限列表
+     * @return array 权限规则列表
      */
     public function authList($uid)
     {
